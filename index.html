@@ -6,7 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
+
+@font-face {
+    font-family: "Gallaecia";
+    src: url("assets/fonts/GallaeciaPixeleira.ttf");
+}
+
+@font-face {
+    font-family: "PixelRunes";
+    src: url("assets/fonts/PixelRunes.ttf");
+}
+
+@font-face {
+    font-family: "PixelMusketeer";
+    src: url("assets/fonts/Pixel\ Musketeer.otf");
+}
+
+@font-face {
+    font-family: "PixelCharas";
+    src: url("asets/fonts/PixelCharas.ttf");
+}
 :root {
+    padding-top: 5rem;
     --background-color: #222;
     --accent-color: #111;
     --font-color: #ddd;
@@ -71,8 +92,23 @@ footer{
     bottom: 0;
 }
 
-/* body {
-} */
+
+body {
+    h1, h2, h3 {
+    font-family: "PixelMusketeer";
+    font-size: xx-large;
+    font-weight: normal;
+    font-style: initial;
+    }
+    h2 {
+        font-size: x-large;
+    }
+    h3 { 
+        font-size: large;
+    }
+} 
+
+
 
 #Experience div, 
 #Projects div {
@@ -137,7 +173,38 @@ footer{
     position: relative;
     bottom: -50%;
     right: 1rem;
-    
+}
+@keyframes flip{
+      0%, 80% {
+        transform: rotateY(360deg)
+      }
+    }
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    /* fill:hsl(189, 68%, 75%) */
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+}
+  
+.Runes p {
+    font-family: "PixelRunes"; 
+    writing-mode: vertical-lr; 
+    text-orientation: upright;
+    letter-spacing: 3px; 
+    padding: 2rem;
+    position:sticky;
+    top: 3rem;
+    animation: flip 5s infinite alternate;
+    animation-delay: calc(.2s * var(--i));
 }
     </style>
     <title>Ashley Crouch - Portfolio</title>
@@ -156,12 +223,12 @@ footer{
         </nav>
     </header>
     <main>
-        <div>
-
+        <div class="Runes">
+            <p>asdbt       zoom    Jade      Hekate      Dusty      Boo     Ivy      </p>
         </div>
         <div>
             <section id="Home">
-                <h1>Home</h1>
+                <h1>Ashley Crouch</h1>
                 <h2>Software Engineer | Technical Artist | Tools Developer</h2>
                 <p>Hello, I'm Ashley, your friendly, neighborhood computer witch. ✨ Welcome to my website. I am a software engineer who enjoys working with people to optimize their workflows through software tools which enable them to excel and do their best work. I am known among my peers as being empathetic and responsible, which allows me to identify pain-points in their current workflow and improve it. I'm looking to take the next step in my career and expand my expertise into game development tools.</p>
                 <ul>
