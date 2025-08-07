@@ -26,6 +26,12 @@
     font-family: "PixelCharas";
     src: url("asets/fonts/PixelCharas.ttf");
 }
+
+@font-face {
+    font-family: "PixelifySans";
+    src: url("assets/fonts/PixelifySans-Regular.ttf");
+}
+
 :root {
     padding-top: 5rem;
     --background-color: #222;
@@ -73,6 +79,7 @@ footer nav {
     padding: 0px;
     margin: 0px;
     background: var(--primary-color);
+    font-family: "PixelifySans";
 }
 header menu,
 footer menu {
@@ -106,6 +113,9 @@ body {
     h3 { 
         font-size: large;
     }
+    li, p {
+        font-family: "PixelifySans";
+    } 
 } 
 
 
@@ -200,7 +210,7 @@ body {
     writing-mode: vertical-lr; 
     text-orientation: upright;
     letter-spacing: 3px; 
-    padding: 2rem;
+    padding: 30%;
     position:sticky;
     top: 3rem;
     animation: flip 5s infinite alternate;
@@ -224,17 +234,19 @@ body {
     </header>
     <main>
         <div class="Runes">
-            <p>asdbt       zoom    Jade      Hekate      Dusty      Boo     Ivy      </p>
+            <p>Bastet       zoom    Jade      Hekate      Dusty      Boo     Ivy      </p>
         </div>
         <div>
             <section id="Home">
                 <h1>Ashley Crouch</h1>
-                <h2>Software Engineer | Technical Artist | Tools Developer</h2>
-                <p>Hello, I'm Ashley, your friendly, neighborhood computer witch. ✨ Welcome to my website. I am a software engineer who enjoys working with people to optimize their workflows through software tools which enable them to excel and do their best work. I am known among my peers as being empathetic and responsible, which allows me to identify pain-points in their current workflow and improve it. I'm looking to take the next step in my career and expand my expertise into game development tools.</p>
+                <!-- <h2>Software Engineer | Technical Artist | Tools Developer</h2> -->
+                <p>Hello, I'm Ashley, your friendly, neighborhood computer witch. ✨ Welcome to my corner of the web! I'm a software engineer who thrives on helping people do their best work by crafting tools that streamline workflows and solve real problems. My peers know me as empathetic and dependable, which helps me spot pain points and transform them into elegant, empowering solutions.
+
+                I`ve always been drawn to the intersection of art and technology—where creativity meets code. As I take the next step in my career, I`m excited to dive deeper into graphics and visual tools, especially within game development, where expressive design and technical precision go hand in hand.</p>
                 <ul>
-                    <li>Responsible</li>
-                    <li>Empathetic</li>
-                    <li>Creative</li>
+                    <li>Software Engineer</li>
+                    <li>Technical Artist</li>
+                    <li>Tools Developer</li>
                 </ul>
     
             </section>
@@ -284,9 +296,9 @@ body {
                     <p>Entry for the 2025 Boss Jam. To play the game, follow the link: <a href="https://james-talon.itch.io/guardian-lemur-jump">https://james-talon.itch.io/guardian-lemur-jump</a> </p>
                     <h3>My Contributions</h3>
                     <ul>
-                        <li>Converted art assets to prefabs for level design</li>
-                        <li>User Interface programming and design using Inkscape</li>
-                        <li>Gameplay programming and Technical Art</li>
+                        <li>Streamlined level design workflows by transforming static assets into reusable prefabs, enabling rapid prototyping and consistent visual integration.</li>
+                        <li>Designed and implemented user interface elements using Inkscape, focusing on clarity, responsiveness, and thematic cohesion.</li>
+                        <li>Developed core gameplay systems and visual effects, bridging the gap between engineering and artistic vision to enhance player experience.</li>
                     </ul>
                 </div>
                 <div>
@@ -314,14 +326,15 @@ body {
                     </ul>
                 </div>
                 <div>
+                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQUWqEt-1qBzFZ1MfIAMnlduKTueSh-65CIcOFvdgqND4GHMwfq0V5ZQpaAQu19efIx0V8SyW0SL6sc/pub?embedded=true"></iframe>
                     <h2>Suit Yourself - 2018</h2>
                     <h3>About the Game</h3>
-                    <p>Suit Yourself is a fast-paced playing card game. In this game players’ strategies challenge each other and can topple down as quickly as a house of cards. Inspired by the classic card game WAR but designed for multiple players with a focus on strategy and diplomacy. Check out the rules sheet by following the link: <a></a></p>
+                    <p>Suit Yourself is a fast-paced playing card game. In this game players` strategies challenge each other and can topple down as quickly as a house of cards. Inspired by the classic card game WAR but designed for multiple players with a focus on strategy and diplomacy. The game was well-received by testers for its strategic depth and polished presentation, and it deepened my interest in graphics programming and user experience design. </p>
                     <h3>My Contributions</h3>
                     <ul>
-                        <li>Obtained resources for testing mechanics, hosted playtests, modified rules to address feedback.</li>
-                        <li>Designed instruction sheet and playmat</li>
-                        <li></li>
+                        <li>Ran multiple playtests to refine mechanics, improve pacing, and ensure intuitive gameplay.</li>
+                        <li>Crafted vector-based card art and UI elements, integrating visual clarity with thematic consistency.</li>
+                        <li>Created rules that balance challenge and accessibility, focusing on player agency and replayability.</li>
                     </ul>
                 </div>
                 <div>
@@ -341,6 +354,7 @@ body {
                         </ul>
                 </div>
                 <div>
+                    <img src="assets/images/dgc_512.png" alt="Digital Garden Collective Logo">
                     <h2>The Digital Garden Collective</h2>
                     <p>Role: Icon design and UX design</p>
                     <p>A written content platform for sharing and exploring notes and developing them over time.</p>
